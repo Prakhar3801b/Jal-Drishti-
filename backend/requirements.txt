@@ -1,0 +1,11 @@
+# Core API. Fits a 512 MB instance (e.g. Render free tier).
+fastapi>=0.115
+uvicorn[standard]>=0.30
+httpx>=0.27
+pydantic>=2.7
+scikit-learn>=1.4
+scipy>=1.11          # MILP solver (HiGHS) for the response plan
+numpy>=1.26
+shapely>=2.0
+# Only used when ANTHROPIC_API_KEY is set; Gemini, Groq and OpenWeatherMap use plain REST.
+anthropic>=1.0

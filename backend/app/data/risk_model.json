@@ -1,0 +1,46 @@
+{
+ "kind": "logistic_regression",
+ "trained_at": "2026-09-16T14:09:50Z",
+ "n_samples": 2699,
+ "n_positive": 70,
+ "feature_order": [
+  "rain_24h",
+  "rain_72h",
+  "rain_forecast_24h",
+  "rain_forecast_72h",
+  "discharge_percentile",
+  "discharge_ratio",
+  "discharge_trend",
+  "soil_saturation",
+  "terrain_susceptibility",
+  "historical_frequency"
+ ],
+ "coefficients": {
+  "rain_24h": 2.95897,
+  "rain_72h": 3.51163,
+  "rain_forecast_24h": 0.58388,
+  "rain_forecast_72h": 2.6056,
+  "discharge_percentile": 3.7768,
+  "discharge_ratio": 1.05683,
+  "discharge_trend": 0.24307,
+  "soil_saturation": 0.0,
+  "terrain_susceptibility": 0.02719,
+  "historical_frequency": -3.03028
+ },
+ "intercept": -3.344,
+ "metrics": {
+  "cv_roc_auc": 0.9341,
+  "cv_roc_auc_std": 0.0137,
+  "cv_average_precision": 0.3476,
+  "cv_folds": 5,
+  "train_roc_auc": 0.9402,
+  "positive_rate": 0.0259
+ },
+ "sampling": {
+  "strategy": "date-matched negatives: all monitored locations scored on each event date",
+  "exclusion_days": 7,
+  "quiet_dates": 10,
+  "climatology": "1994-2024",
+  "note": "Negatives share calendar dates with positives so the model cannot win by learning seasonality alone."
+ }
+}

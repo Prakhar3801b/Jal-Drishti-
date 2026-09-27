@@ -1,0 +1,76 @@
+# Render Blueprint for the JalDrishti API.
+# Render dashboard -> New -> Blueprint -> pick this repository.
+services:
+  - type: web
+    name: jaldrishti-api
+    runtime: python
+    rootDir: backend
+    plan: free                     # "starter" or above to add the persistent disk below
+    region: singapore              # closest Render region to India
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips="*"
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      # Exact frontend origins, comma separated: the Vercel project's domain.
+      - key: JALDRISHTI_CORS
+        value: https://hack-eosin-two.vercel.app
+      # Extra origins as a regex. Kept to the exact domain: a looser "hack-..."
+      # pattern would also admit other people's Vercel projects.
+      - key: JALDRISHTI_CORS_REGEX
+        value: https://hack-eosin-two\.vercel\.app
+      - key: JALDRISHTI_REFRESH_MINUTES
+        value: "90"
+      # CWC blocks non-Indian servers: route its requests through the relay that
+      # ships with the frontend on Vercel (Mumbai). See docs/DEPLOYMENT.md.
+      - key: JALDRISHTI_CWC_RELAY
+        sync: false               # e.g. https://jaldrishti.vercel.app/api/cwc
+      - key: JALDRISHTI_CWC_RELAY_TOKEN
+        sync: false               # same value as CWC_RELAY_TOKEN on Vercel
+      # Sign-in. A fixed signing key keeps people signed in across deploys and
+      # restarts (Render generates it once). Set the seed password for the
+      # central/state/district admin accounts in the dashboard; without it they
+      # use the public default from the README. Demo sign-in stays on for judges.
+      - key: JALDRISHTI_SECRET
+        generateValue: true
+      - key: JALDRISHTI_SEED_PASSWORD
+        sync: false
+      - key: JALDRISHTI_DEMO_LOGIN
+        value: "1"
+      # Alerts through viaSocket (docs/NOTIFICATIONS.md). The webhook URL and the
+      # recipients are set in the dashboard. Recipients: a JSON list restored at
+      # every boot, because the free plan has no disk to keep the Notifications page's
+      # settings, e.g. [{"username":"central","email":"you@example.org","channels":["email"]}]
+      - key: JALDRISHTI_NOTIFY_WEBHOOK
+        sync: false
+      - key: JALDRISHTI_NOTIFY_SECRET
+        generateValue: true
+      - key: JALDRISHTI_NOTIFY_RECIPIENTS
+        sync: false
+      # Links in emails and WhatsApp messages. Replace with your Vercel domain.
+      - key: JALDRISHTI_PUBLIC_WEB_URL
+        value: https://hack-eosin-two.vercel.app
+      # Keep-alive: nothing to set. The backend pings RENDER_EXTERNAL_URL (set by
+      # Render) every 10 min so the free instance does not sleep.
+      # Optional API keys: set the values in the dashboard (never commit them).
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: OPENWEATHER_API_KEY
+        sync: false
+    # Paid plans only: keep the SQLite store and caches across deploys/restarts,
+    # so the 30-year climatology is not rebuilt on every boot.
+    # disk:
+    #   name: jaldrishti-data
+    #   mountPath: /var/data
+    #   sizeGB: 1
+    # ...and add these env vars:
+    #   JALDRISHTI_DB=/var/data/jaldrishti.db
+    #   JALDRISHTI_CACHE_DIR=/var/data/cache

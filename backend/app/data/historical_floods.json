@@ -1,0 +1,891 @@
+{
+ "_meta": {
+  "description": "Hand-compiled register of real, dated flood events at or near the monitored locations. Used for (a) the historical-frequency risk feature, (b) back-testing the risk score against known events, and (c) the Event Replay mode.",
+  "source_note": "Compiled from public records: CWC advisory archives, NDMA/State Disaster Management Authority situation reports, IMD monthly weather reports and contemporaneous news reporting. This is a PROTOTYPE dataset assembled by hand, not an official government extract.",
+  "date_precision": "'day' = specific documented date. 'month' = event is well documented but the peak day is approximate; only the month should be relied on.",
+  "severity": "1 = localised waterlogging, 2 = significant urban/riverine flooding, 3 = major disaster with large displacement or loss of life",
+  "count": 110
+ },
+ "events": [
+  {
+   "location_id": "mumbai",
+   "date": "2005-07-26",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Mumbai deluge — 944 mm in 24 h at Santacruz, Mithi river overtopped"
+  },
+  {
+   "location_id": "mumbai",
+   "date": "2017-08-29",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "City-wide submergence after ~300 mm in 12 h"
+  },
+  {
+   "location_id": "mumbai",
+   "date": "2021-07-18",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Heavy spell with landslides at Chembur and Vikhroli"
+  },
+  {
+   "location_id": "thane",
+   "date": "2005-07-26",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Ulhas basin flooding during the July 2005 Maharashtra event"
+  },
+  {
+   "location_id": "thane",
+   "date": "2019-08-04",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Badlapur–Kalyan belt inundated, Ulhas above danger level"
+  },
+  {
+   "location_id": "pune",
+   "date": "2019-09-25",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Cloudburst over Ambil Odha, Katraj and Sahakarnagar flooded"
+  },
+  {
+   "location_id": "pune",
+   "date": "2024-07-25",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Sinhagad Road and Ekta Nagar flooded, Khadakwasla discharge raised"
+  },
+  {
+   "location_id": "kolhapur",
+   "date": "2019-08-07",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Panchganga record flood, large-scale evacuation across Kolhapur district"
+  },
+  {
+   "location_id": "kolhapur",
+   "date": "2021-07-23",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Western Maharashtra floods, Panchganga again above 2019 marks in places"
+  },
+  {
+   "location_id": "sangli",
+   "date": "2019-08-08",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Krishna at Irwin Bridge near record, Sangli–Miraj submerged"
+  },
+  {
+   "location_id": "sangli",
+   "date": "2021-07-23",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Krishna in spate following upstream Koyna and Warna releases"
+  },
+  {
+   "location_id": "nagpur",
+   "date": "2023-09-23",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Ambazari lake overflow, Nag river flooded central Nagpur overnight"
+  },
+  {
+   "location_id": "chennai",
+   "date": "2015-12-01",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Chennai floods — Adyar in record spate after Chembarambakkam release"
+  },
+  {
+   "location_id": "chennai",
+   "date": "2023-12-04",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "cyclone",
+   "headline": "Cyclone Michaung — extreme rain, city-wide inundation"
+  },
+  {
+   "location_id": "chennai",
+   "date": "2021-11-11",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "North-east monsoon spell, widespread waterlogging"
+  },
+  {
+   "location_id": "cuddalore",
+   "date": "2015-12-02",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Gadilam and Ponnaiyar flooding, town centre submerged"
+  },
+  {
+   "location_id": "cuddalore",
+   "date": "2011-12-30",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "cyclone",
+   "headline": "Cyclone Thane landfall near Cuddalore"
+  },
+  {
+   "location_id": "thanjavur",
+   "date": "2018-11-16",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "cyclone",
+   "headline": "Cyclone Gaja — Cauvery delta flooding and crop loss"
+  },
+  {
+   "location_id": "thanjavur",
+   "date": "2021-11-01",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Heavy north-east monsoon, delta districts waterlogged"
+  },
+  {
+   "location_id": "kolkata",
+   "date": "2020-05-20",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "cyclone",
+   "headline": "Cyclone Amphan — surge, tree fall and city-wide flooding"
+  },
+  {
+   "location_id": "kolkata",
+   "date": "2021-09-20",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Low-pressure system, prolonged waterlogging across south Kolkata"
+  },
+  {
+   "location_id": "jalpaiguri",
+   "date": "2023-10-04",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "glof",
+   "headline": "South Lhonak GLOF in Sikkim sent a flood wave down the Teesta"
+  },
+  {
+   "location_id": "jalpaiguri",
+   "date": "2017-08-12",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "North Bengal floods, Teesta and Jaldhaka above danger level"
+  },
+  {
+   "location_id": "malda",
+   "date": "2017-08-20",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Ganga and Mahananda flooding, large displacement in Malda"
+  },
+  {
+   "location_id": "patna",
+   "date": "2019-09-28",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Patna waterlogged for days after ~200 mm, Punpun drainage backed up"
+  },
+  {
+   "location_id": "patna",
+   "date": "2016-08-22",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Ganga above danger level at Gandhi Ghat"
+  },
+  {
+   "location_id": "bhagalpur",
+   "date": "2016-08-22",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Ganga flood, diara belt inundated"
+  },
+  {
+   "location_id": "darbhanga",
+   "date": "2019-07-14",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Bagmati and Kamla Balan floods across north Bihar"
+  },
+  {
+   "location_id": "darbhanga",
+   "date": "2020-07-26",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Prolonged north Bihar flooding, several lakh affected"
+  },
+  {
+   "location_id": "muzaffarpur",
+   "date": "2019-07-14",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Burhi Gandak above danger level, district widely affected"
+  },
+  {
+   "location_id": "muzaffarpur",
+   "date": "2020-07-26",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Burhi Gandak and Bagmati in spate"
+  },
+  {
+   "location_id": "guwahati",
+   "date": "2022-06-17",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Assam floods — Guwahati flash flooding, Brahmaputra rising"
+  },
+  {
+   "location_id": "guwahati",
+   "date": "2020-07-15",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Brahmaputra in major spate, prolonged state-wide flooding"
+  },
+  {
+   "location_id": "guwahati",
+   "date": "2024-07-01",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Brahmaputra above danger level, urban flash flooding"
+  },
+  {
+   "location_id": "dibrugarh",
+   "date": "2020-07-15",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Brahmaputra flood, embankment breaches in upper Assam"
+  },
+  {
+   "location_id": "dibrugarh",
+   "date": "2022-06-18",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Upper Assam flooding during the June 2022 event"
+  },
+  {
+   "location_id": "silchar",
+   "date": "2022-06-20",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Barak embankment breach at Betukandi — Silchar submerged for days"
+  },
+  {
+   "location_id": "dhubri",
+   "date": "2022-06-18",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Lower Assam inundation, Brahmaputra well above danger level"
+  },
+  {
+   "location_id": "dhubri",
+   "date": "2020-07-15",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Brahmaputra flood, char areas worst affected"
+  },
+  {
+   "location_id": "delhi",
+   "date": "2023-07-13",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Yamuna peaked at 208.66 m at Old Railway Bridge — highest since 1978"
+  },
+  {
+   "location_id": "delhi",
+   "date": "2024-06-28",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Record pre-monsoon-onset downpour, city-wide waterlogging"
+  },
+  {
+   "location_id": "varanasi",
+   "date": "2021-08-12",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Ganga above danger level, ghats and low-lying colonies flooded"
+  },
+  {
+   "location_id": "prayagraj",
+   "date": "2021-08-12",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Ganga–Yamuna confluence flooding, Daraganj affected"
+  },
+  {
+   "location_id": "prayagraj",
+   "date": "2016-08-24",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Both rivers above danger level at the Sangam"
+  },
+  {
+   "location_id": "gorakhpur",
+   "date": "2017-08-20",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Rapti and Rohin floods across the eastern UP terai"
+  },
+  {
+   "location_id": "lucknow",
+   "date": "2021-09-11",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Record September downpour, city-wide waterlogging"
+  },
+  {
+   "location_id": "haridwar",
+   "date": "2013-06-17",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Uttarakhand disaster — Ganga in extreme spate downstream of Kedarnath"
+  },
+  {
+   "location_id": "haridwar",
+   "date": "2021-10-19",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Unseasonal October cloudburst spell across Uttarakhand"
+  },
+  {
+   "location_id": "srinagar",
+   "date": "2014-09-07",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Kashmir floods — Jhelum breached embankments, Srinagar submerged"
+  },
+  {
+   "location_id": "surat",
+   "date": "2006-08-08",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "dam_release",
+   "headline": "Ukai dam release into a flooding Tapi — most of Surat under water"
+  },
+  {
+   "location_id": "surat",
+   "date": "2020-08-24",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "dam_release",
+   "headline": "High Ukai outflow, low-lying Surat wards evacuated"
+  },
+  {
+   "location_id": "vadodara",
+   "date": "2024-08-27",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Vishwamitri overtopped after Ajwa overflow — large parts of the city flooded"
+  },
+  {
+   "location_id": "vadodara",
+   "date": "2019-07-31",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "~500 mm in a day, Vishwamitri above danger level"
+  },
+  {
+   "location_id": "ahmedabad",
+   "date": "2024-08-26",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Deep depression over Saurashtra, city-wide flooding"
+  },
+  {
+   "location_id": "kochi",
+   "date": "2018-08-16",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "dam_release",
+   "headline": "Kerala floods — Idukki and Idamalayar releases swelled the Periyar"
+  },
+  {
+   "location_id": "kochi",
+   "date": "2021-10-17",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Intense October spell, central Kerala flooding"
+  },
+  {
+   "location_id": "alappuzha",
+   "date": "2018-08-16",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Kuttanad submerged as the Pamba and Achankovil peaked"
+  },
+  {
+   "location_id": "wayanad",
+   "date": "2024-07-30",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "landslide",
+   "headline": "Mundakkai–Chooralmala landslides after extreme orographic rain"
+  },
+  {
+   "location_id": "wayanad",
+   "date": "2019-08-08",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "landslide",
+   "headline": "Puthumala landslide during the August 2019 Kerala floods"
+  },
+  {
+   "location_id": "cuttack",
+   "date": "2022-08-17",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Mahanadi flood after high Hirakud outflow, delta districts affected"
+  },
+  {
+   "location_id": "cuttack",
+   "date": "2011-09-10",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Major Mahanadi flood across coastal Odisha"
+  },
+  {
+   "location_id": "balasore",
+   "date": "2021-08-01",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Subarnarekha above danger level, Odisha–Bengal border blocks flooded"
+  },
+  {
+   "location_id": "vijayawada",
+   "date": "2024-09-01",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Budameru breach flooded western Vijayawada for several days"
+  },
+  {
+   "location_id": "vijayawada",
+   "date": "2009-10-02",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Record Krishna flood, Prakasam Barrage outflow at historic highs"
+  },
+  {
+   "location_id": "rajahmundry",
+   "date": "2022-07-16",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Godavari third-warning flood at Dowleswaram Barrage"
+  },
+  {
+   "location_id": "hyderabad",
+   "date": "2020-10-13",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Record ~192 mm, Musi and lake chains overflowed across the city"
+  },
+  {
+   "location_id": "bengaluru",
+   "date": "2022-09-05",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Outer Ring Road and Bellandur–Sarjapur belt flooded for days"
+  },
+  {
+   "location_id": "imphal",
+   "date": "2024-05-31",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "cyclone",
+   "headline": "Cyclone Remal remnants — Imphal river breached, valley flooded"
+  },
+  {
+   "location_id": "imphal",
+   "date": "2022-06-18",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Valley flooding during the June 2022 north-east event"
+  },
+  {
+   "location_id": "agartala",
+   "date": "2024-08-21",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Tripura floods — Haora river breached, Agartala widely inundated"
+  },
+  {
+   "location_id": "chiplun",
+   "date": "2021-07-22",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Vashishti overflowed; Chiplun town under several metres of water"
+  },
+  {
+   "location_id": "mandi",
+   "date": "2023-07-10",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Beas in extreme spate during the July 2023 Himachal floods"
+  },
+  {
+   "location_id": "kullu",
+   "date": "2023-07-10",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Beas washed away roads and bridges across Kullu–Manali"
+  },
+  {
+   "location_id": "shimla",
+   "date": "2023-08-14",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "landslide",
+   "headline": "Summer Hill landslide during extreme August 2023 rain"
+  },
+  {
+   "location_id": "gangtok",
+   "date": "2023-10-04",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "glof",
+   "headline": "South Lhonak GLOF flood wave down the Teesta through Sikkim"
+  },
+  {
+   "location_id": "leh",
+   "date": "2010-08-06",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Leh cloudburst — flash floods and debris flows through the town"
+  },
+  {
+   "location_id": "chamoli",
+   "date": "2021-02-07",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "glof",
+   "headline": "Rishiganga–Dhauliganga flash flood destroyed hydro projects"
+  },
+  {
+   "location_id": "rishikesh",
+   "date": "2013-06-17",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Ganga in extreme spate during the Uttarakhand disaster"
+  },
+  {
+   "location_id": "patiala",
+   "date": "2023-07-10",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Ghaggar and its tributaries flooded Patiala and Rajpura"
+  },
+  {
+   "location_id": "ludhiana",
+   "date": "2023-07-10",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Sutlej belt flooding during the July 2023 Punjab floods"
+  },
+  {
+   "location_id": "ambala",
+   "date": "2023-07-09",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Tangri overflowed into Ambala Cantt after record rain"
+  },
+  {
+   "location_id": "yamunanagar",
+   "date": "2023-07-11",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "dam_release",
+   "headline": "Record Hathnikund barrage release on the Yamuna"
+  },
+  {
+   "location_id": "chandigarh",
+   "date": "2023-07-09",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Record July rainfall, Sukhna floodgates opened, city waterlogged"
+  },
+  {
+   "location_id": "aizawl",
+   "date": "2024-05-28",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "cyclone",
+   "headline": "Cyclone Remal rain triggered deadly landslides around Aizawl"
+  },
+  {
+   "location_id": "madikeri",
+   "date": "2018-08-16",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "landslide",
+   "headline": "Kodagu landslides and floods during the August 2018 monsoon"
+  },
+  {
+   "location_id": "belagavi",
+   "date": "2019-08-07",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Krishna basin floods across northern Karnataka"
+  },
+  {
+   "location_id": "kozhikode",
+   "date": "2019-08-08",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Chaliyar flooding during the August 2019 Kerala rains"
+  },
+  {
+   "location_id": "puri",
+   "date": "2019-05-03",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "cyclone",
+   "headline": "Cyclone Fani landfall near Puri"
+  },
+  {
+   "location_id": "nellore",
+   "date": "2021-11-19",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Pennar floods after extreme north-east monsoon rain"
+  },
+  {
+   "location_id": "visakhapatnam",
+   "date": "2014-10-12",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "cyclone",
+   "headline": "Cyclone Hudhud landfall at Visakhapatnam"
+  },
+  {
+   "location_id": "bhadrachalam",
+   "date": "2022-07-15",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Godavari crossed 70 ft at Bhadrachalam, highest in decades"
+  },
+  {
+   "location_id": "warangal",
+   "date": "2020-08-16",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Tri-city flooding after sustained heavy rain"
+  },
+  {
+   "location_id": "tirunelveli",
+   "date": "2023-12-18",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Extreme rain flooded Tirunelveli and Thoothukudi"
+  },
+  {
+   "location_id": "junagadh",
+   "date": "2023-07-22",
+   "date_precision": "day",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Flash floods swept vehicles through Junagadh city"
+  },
+  {
+   "location_id": "bharuch",
+   "date": "2023-09-17",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "dam_release",
+   "headline": "Narmada flood after high Sardar Sarovar outflow"
+  },
+  {
+   "location_id": "nashik",
+   "date": "2019-08-04",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Godavari in spate through Nashik after Gangapur release"
+  },
+  {
+   "location_id": "kota",
+   "date": "2019-09-15",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "dam_release",
+   "headline": "Chambal flooding in Kota after high dam releases"
+  },
+  {
+   "location_id": "narmadapuram",
+   "date": "2020-08-30",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Narmada in record flood at Hoshangabad"
+  },
+  {
+   "location_id": "gwalior",
+   "date": "2021-08-04",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Gwalior–Chambal region floods, Sindh river in spate"
+  },
+  {
+   "location_id": "supaul",
+   "date": "2008-08-18",
+   "date_precision": "day",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Kosi embankment breach at Kusaha changed the river's course"
+  },
+  {
+   "location_id": "purnia",
+   "date": "2008-08-20",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Kosi flood spread across Purnia division"
+  },
+  {
+   "location_id": "bahraich",
+   "date": "2017-08-20",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Ghaghra floods across the Terai districts"
+  },
+  {
+   "location_id": "ballia",
+   "date": "2016-08-22",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Ganga above danger level, erosion and flooding"
+  },
+  {
+   "location_id": "coochbehar",
+   "date": "2017-08-13",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "North Bengal floods, Torsa and Raidak in spate"
+  },
+  {
+   "location_id": "barpeta",
+   "date": "2022-06-18",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "river_discharge",
+   "headline": "Among the worst-hit districts of the June 2022 Assam floods"
+  },
+  {
+   "location_id": "lakhimpur",
+   "date": "2020-07-15",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Subansiri and Ranganadi flooding in upper Assam"
+  },
+  {
+   "location_id": "jammu",
+   "date": "2014-09-06",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Tawi and Chenab in spate during the September 2014 floods"
+  },
+  {
+   "location_id": "barmer",
+   "date": "2006-08-22",
+   "date_precision": "month",
+   "severity": 3,
+   "driver": "extreme_rainfall",
+   "headline": "Desert flood inundated Kawas and villages across Barmer"
+  },
+  {
+   "location_id": "sambalpur",
+   "date": "2011-09-10",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "river_discharge",
+   "headline": "Mahanadi flood with high Hirakud releases"
+  },
+  {
+   "location_id": "puducherry",
+   "date": "2015-12-01",
+   "date_precision": "month",
+   "severity": 2,
+   "driver": "extreme_rainfall",
+   "headline": "Heavy north-east monsoon rain, widespread waterlogging"
+  }
+ ]
+}

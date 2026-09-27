@@ -1,0 +1,6 @@
+# Optional: AI river-level forecasts with Hugging Face amazon/chronos-bolt-small.
+# Pulls in PyTorch (~800 MB installed, ~1 GB RAM at runtime), so install it only
+# on a machine or instance with at least 2 GB of memory. Without it the app runs
+# fully and the station view shows CWC observations without the AI forecast.
+-r requirements.txt
+chronos-forecasting>=1.4
